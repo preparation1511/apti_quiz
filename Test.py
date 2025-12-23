@@ -171,7 +171,7 @@ def render_question(q):
             try:
                 st.image(img, use_container_width=True)
             except TypeError:
-                st.image(img, width=700)
+                st.image(img, width=400)
 
     # --- Correct answers (list) ---
     try:
@@ -359,4 +359,5 @@ else:
     if col3.button("Next ➡"):
         st.session_state.index += 1
         st.rerun()
+
 
